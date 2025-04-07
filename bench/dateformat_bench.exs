@@ -48,7 +48,7 @@ defmodule Timex.Timex.Bench do
       {:ok, _} = Default.tokenize("{YYYY}-{M}-{D}T{h24}:{m}:{s}Z")
       {:ok, _} = Default.tokenize("{YYYY}-{M}-{D}T{h24}:{m}:{s}{Z}")
     end
-
+    @duration "P15Y3M2DT1H14M37.25S"
     bench "Timex.local" do
       _ = Timex.local
       :ok
